@@ -11,6 +11,8 @@ import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import FAQ from "./Pages/FAQ/FAQ";
 import UserProfile from "./Screen/UserProfile/UserProfile";
+import Shop from "./Pages/Shop/Shop";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
           <Route path="/Contact" element={<Contact />} />
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/UserProfile" element={<UserProfile />} />
+          <Route path="/Shop" element={<Shop />} />
+          <Route path="/Blog" element={<Blog />} />
         </Routes>
       </BrowserRouter>
     </div>

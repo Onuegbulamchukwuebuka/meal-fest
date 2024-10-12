@@ -1,8 +1,6 @@
-import mlogo from "../../Asset/mlogo (1).png";
-import { BrowserRouter } from "react-router-dom";
-import { FaCartPlus } from "react-icons/fa";
-import { FaUserTie } from "react-icons/fa";
-import { RiHeartAddFill } from "react-icons/ri";
+import logo from "../../Asset/mlogo.png";
+import { FaUserTie } from "react-icons/fa6";
+import { GrLogin } from "react-icons/gr";
 
 import {
   Disclosure,
@@ -23,18 +21,18 @@ const navigation = [
   { name: "Calendar", href: "#", current: false },
 ];
 
-function classNames(...classes: string[]) {
+function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function NarBar() {
+export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-red-50">
+    <Disclosure as="nav" className="bg-slate-50">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             {/* Mobile menu button*/}
-            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-red-950 hover:bg-red-950 hover:text-yellow-300 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-950">
+            <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-black hover:text-slate-50">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
               <Bars3Icon
@@ -47,86 +45,96 @@ export default function NarBar() {
               />
             </DisclosureButton>
           </div>
-          <div className="flex flex-1 items-center justify-evenly sm:items-stretch sm:justify-start">
-            <div>
-              <div className="flex justify-center gap-24 space-x-1 mx-0">
-                <div className="flex  flex-shrink-0 items-center">
-                  <Link to={"/"}>
-                    <img
-                      alt="Your Company"
-                      src={mlogo}
-                      className="h-12 w-36 object-cover"
-                    />
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <Link to="/">
+              <div className="flex w-32 h-9 flex-shrink-0 items-center">
+                <img alt="Your Company" src={logo} className="h-auto w-auto" />
+              </div>
+            </Link>
+            <div className="hidden sm:ml-6 sm:block">
+              <div className="flex space-x-4">
+                <ul className="flex gap-2 my-1 ">
+                  <Link
+                    to="/"
+                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                  >
+                    <p>Home</p>
                   </Link>
-                </div>
-                <div className="hidden sm:ml-6 sm:block">
-                  <ul className="flex justify-center w-64 gap-1 my-3 ">
-                    <Link to={"/"}>
-                      <li className="bg-red-950 text-yellow-300 h-10 w-20 text-l text-center py-2 rounded-md font-bold">
-                        HOME
-                      </li>
-                    </Link>
-                    <Link to={"/Categories"}>
-                      <li className=" text-red-950 h-10 w-28 text-sm text-center py-2 rounded-md font-bold hover:bg-red-950 hover:text-yellow-300">
-                        CATEGORIES
-                      </li>
-                    </Link>
-                    <Link to={"/About"}>
-                      <li className=" text-red-950 h-10 w-28 text-sm text-center py-2 rounded-md font-bold hover:bg-red-950 hover:text-yellow-300">
-                        ABOUT
-                      </li>
-                    </Link>
-                    <Link to={"/Contact"}>
-                      <li className=" text-red-950 h-10 w-28 text-sm text-center py-2 rounded-md font-bold hover:bg-red-950 hover:text-yellow-300">
-                        CONTACT
-                      </li>
-                    </Link>
-                  </ul>
-                </div>
+                  <Link
+                    to="/Shop"
+                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                  >
+                    <p>Shop</p>
+                  </Link>
+                  <Link
+                    to="/Blog"
+                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                  >
+                    <p>Blog</p>
+                  </Link>
+                  <Link
+                    to="/Categories"
+                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                  >
+                    <p>Categories</p>
+                  </Link>
+                  <Link
+                    to="/About"
+                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                  >
+                    <p>About</p>
+                  </Link>
+                  <Link
+                    to="/Contact"
+                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                  >
+                    <p>Contact</p>
+                  </Link>
+                </ul>
               </div>
             </div>
           </div>
-          <div className="  right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <button type="button" className=" p-1 text-red-950">
-              <FaCartPlus aria-hidden="true" className="h-6 w-6" />
-            </button>
-            <button>
-              <RiHeartAddFill className="h-6 w-6 text-sm rounded-full text-red-950" />
-            </button>
-
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            {/* <Link to="/Login">
+              <div className=" flex h-8 w-15 rounded-lg bg-trasperent p-1 text-black font-semibold hover:text-slate-50 hover:bg-black ">
+                Login <GrLogin className="h-8 pb-1.5" />
+              </div>
+            </Link> */}
             {/* Profile dropdown */}
             <Menu as="div" className="relative ml-3">
               <div>
-                <MenuButton className="flex justify-center text-center rounded-full ">
-                  <button>
-                    <FaUserTie className="h-6 w-6 text-sm rounded-full text-red-950" />
-                  </button>
+                <MenuButton className="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                  <span className="absolute -inset-1.5" />
+                  <span className="sr-only">Open user menu</span>
+                  <div className="w-6 h-6 rounded-full text-black text-center bg-transperent item-center mx-auto my-auto ">
+                    <FaUserTie className="w-6 h-6 text-center text-lg rounded-full" />
+                  </div>
                 </MenuButton>
               </div>
               <MenuItems
                 transition
-                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-red-50 py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
+                className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-slate-50 py-1 shadow-lg ring-1 ring-black ring-opacity-5 transition focus:outline-none data-[closed]:scale-95 data-[closed]:transform data-[closed]:opacity-0 data-[enter]:duration-100 data-[leave]:duration-75 data-[enter]:ease-out data-[leave]:ease-in"
               >
                 <MenuItem>
                   <a
-                    href="/UserProfile"
-                    className="block px-4 py-2 text-sm text-red-950 data-[focus]:bg-yellow-300"
+                    href="/Login"
+                    className="block px-4 py-2 text-sm text-blacl data-[focus]:bg-red-500 data-[focus]:text-slate-50"
                   >
-                    User Profile
+                    Log in
                   </a>
                 </MenuItem>
                 <MenuItem>
                   <a
-                    href="/Login"
-                    className="block px-4 py-2 text-sm text-red-950 data-[focus]:bg-yellow-300"
+                    href="/Signup"
+                    className="block px-4 py-2 text-sm text-black data-[focus]:bg-red-500 data-[focus]:text-slate-50"
                   >
-                    Login
+                    Sign up
                   </a>
                 </MenuItem>
                 <MenuItem>
                   <a
                     href="/FAQ"
-                    className="block px-4 py-2 text-sm text-red-950 data-[focus]:bg-yellow-300"
+                    className="block px-4 py-2 text-sm text-black data-[focus]:bg-red-500 data-[focus]:text-slate-50"
                   >
                     FAQ
                   </a>
@@ -139,26 +147,42 @@ export default function NarBar() {
 
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
-          <ul className="flex flex-col justify-start w-64 gap-1 my-3 ">
-            <Link to={"/"}>
-              <li className="bg-red-950 text-yellow-300 h-10 mw-auto px-2 text-start text-l py-2 rounded-md font-bold">
-                HOME
-              </li>
+          <ul className="flex flex-col gap-2 my-1 mx-3 ">
+            <Link
+              to="/"
+              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+            >
+              <p>Home</p>
             </Link>
-            <Link to={"/Categories"}>
-              <li className=" text-red-950 h-10  text-sm mw-auto px-2 text-start py-2 rounded-md font-bold hover:bg-red-950 hover:text-yellow-300">
-                CATEGORIES
-              </li>
+            <Link
+              to="/Shop"
+              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+            >
+              <p>Shop</p>
             </Link>
-            <Link to={"/About"}>
-              <li className=" text-red-950 h-10  text-sm mw-auto px-2 text-start py-2 rounded-md font-bold hover:bg-red-950 hover:text-yellow-300">
-                ABOUT
-              </li>
+            <Link
+              to="/Blog"
+              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+            >
+              <p>Blog</p>
             </Link>
-            <Link to={"/Contact"}>
-              <li className=" text-red-950 h-10  text-sm mw-auto px-2 text-start py-2 rounded-md font-bold hover:bg-red-950 hover:text-yellow-300">
-                CONTACT
-              </li>
+            <Link
+              to="/Categories"
+              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+            >
+              <p>Categories</p>
+            </Link>
+            <Link
+              to="/About"
+              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+            >
+              <p>About</p>
+            </Link>
+            <Link
+              to="/Contact"
+              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+            >
+              <p>Contact</p>
             </Link>
           </ul>
         </div>
@@ -166,11 +190,3 @@ export default function NarBar() {
     </Disclosure>
   );
 }
-
-// import React from "react";
-
-// const NavBar = () => {
-//   return <div>NavBar NavBar</div>;
-// };
-
-// export default NavBar;
