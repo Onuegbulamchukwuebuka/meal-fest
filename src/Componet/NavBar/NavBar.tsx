@@ -28,9 +28,9 @@ function classNames(...classes: any[]) {
 export default function Example() {
   return (
     <Disclosure as="nav" className="bg-slate-50">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
-          <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
             {/* Mobile menu button*/}
             <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-black hover:text-slate-50">
               <span className="absolute -inset-0.5" />
@@ -45,48 +45,48 @@ export default function Example() {
               />
             </DisclosureButton>
           </div>
-          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
             <Link to="/">
               <div className="flex w-32 h-9 flex-shrink-0 items-center">
                 <img alt="Your Company" src={logo} className="h-auto w-auto" />
               </div>
             </Link>
-            <div className="hidden sm:ml-6 sm:block">
+            <div className="hidden md:ml-6 md:block">
               <div className="flex space-x-4">
                 <ul className="flex gap-2 my-1 ">
                   <Link
                     to="/"
-                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
                   >
                     <p>Home</p>
                   </Link>
                   <Link
-                    to="/Shop"
-                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                    to="/Order"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
                   >
-                    <p>Shop</p>
+                    <p>Order now</p>
                   </Link>
                   <Link
                     to="/Blog"
-                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
                   >
                     <p>Blog</p>
                   </Link>
                   <Link
                     to="/Categories"
-                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
                   >
                     <p>Categories</p>
                   </Link>
                   <Link
                     to="/About"
-                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
                   >
                     <p>About</p>
                   </Link>
                   <Link
                     to="/Contact"
-                    className="flex flex-col item-center text-red-500 text-center rounded-md font-bold hover:text-black"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
                   >
                     <p>Contact</p>
                   </Link>
@@ -94,7 +94,7 @@ export default function Example() {
               </div>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <div className="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
             {/* <Link to="/Login">
               <div className=" flex h-8 w-15 rounded-lg bg-trasperent p-1 text-black font-semibold hover:text-slate-50 hover:bg-black ">
                 Login <GrLogin className="h-8 pb-1.5" />
@@ -145,7 +145,7 @@ export default function Example() {
         </div>
       </div>
 
-      <DisclosurePanel className="sm:hidden">
+      <DisclosurePanel className="md:hidden">
         <div className="space-y-1 px-2 pb-3 pt-2">
           <ul className="flex flex-col gap-2 my-1 mx-3 ">
             <Link
