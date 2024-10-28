@@ -1,4 +1,4 @@
-import logo from "../../Asset/mlogo.png";
+import logo from "../../Asset/flair logo.png";
 import { FaUserTie } from "react-icons/fa6";
 import { GrLogin } from "react-icons/gr";
 
@@ -56,39 +56,33 @@ export default function Example() {
                 <ul className="flex gap-2 my-1 ">
                   <Link
                     to="/"
-                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-blue-700"
                   >
-                    <p>Home</p>
+                    <p>HOME</p>
                   </Link>
                   <Link
                     to="/Order"
-                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-blue-700"
                   >
-                    <p>Order now</p>
+                    <p>COLLECTION</p>
                   </Link>
                   <Link
                     to="/Blog"
-                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-blue-700"
                   >
-                    <p>Blog</p>
-                  </Link>
-                  <Link
-                    to="/Categories"
-                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
-                  >
-                    <p>Categories</p>
+                    <p>BLOG</p>
                   </Link>
                   <Link
                     to="/About"
-                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-blue-700"
                   >
-                    <p>About</p>
+                    <p>ABOUT</p>
                   </Link>
                   <Link
                     to="/Contact"
-                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-red-500"
+                    className="flex flex-col item-center text-black text-center rounded-md font-bold hover:text-blue-700"
                   >
-                    <p>Contact</p>
+                    <p>CONTACT</p>
                   </Link>
                 </ul>
               </div>
@@ -118,7 +112,7 @@ export default function Example() {
                 <MenuItem>
                   <a
                     href="/Login"
-                    className="block px-4 py-2 text-sm text-blacl data-[focus]:bg-red-500 data-[focus]:text-slate-50"
+                    className="block px-4 py-2 text-sm text-blacl data-[focus]:bg-blue-700 data-[focus]:text-slate-50"
                   >
                     Log in
                   </a>
@@ -126,7 +120,7 @@ export default function Example() {
                 <MenuItem>
                   <a
                     href="/Signup"
-                    className="block px-4 py-2 text-sm text-black data-[focus]:bg-red-500 data-[focus]:text-slate-50"
+                    className="block px-4 py-2 text-sm text-black data-[focus]:bg-blue-700 data-[focus]:text-slate-50"
                   >
                     Sign up
                   </a>
@@ -134,7 +128,7 @@ export default function Example() {
                 <MenuItem>
                   <a
                     href="/FAQ"
-                    className="block px-4 py-2 text-sm text-black data-[focus]:bg-red-500 data-[focus]:text-slate-50"
+                    className="block px-4 py-2 text-sm text-black data-[focus]:bg-blue-700 data-[focus]:text-slate-50"
                   >
                     FAQ
                   </a>
@@ -150,39 +144,33 @@ export default function Example() {
           <ul className="flex flex-col gap-2 my-1 mx-3 ">
             <Link
               to="/"
-              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+              className="flex flex-col item-center text-black text-start rounded-md font-bold hover:text-blue-700"
             >
-              <p>Home</p>
+              <p>HOME</p>
             </Link>
             <Link
               to="/Shop"
-              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+              className="flex flex-col item-center text-black text-start rounded-md font-bold hover:text-blue-700"
             >
-              <p>Shop</p>
+              <p>COLLECTION</p>
             </Link>
             <Link
               to="/Blog"
-              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+              className="flex flex-col item-center text-black text-start rounded-md font-bold hover:text-blue-700"
             >
-              <p>Blog</p>
-            </Link>
-            <Link
-              to="/Categories"
-              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
-            >
-              <p>Categories</p>
+              <p>BLOG</p>
             </Link>
             <Link
               to="/About"
-              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+              className="flex flex-col item-center text-black text-start rounded-md font-bold hover:text-blue-700"
             >
-              <p>About</p>
+              <p>ABOUT</p>
             </Link>
             <Link
               to="/Contact"
-              className="flex flex-col item-center text-red-500 text-start rounded-md font-bold hover:text-black"
+              className="flex flex-col item-center text-black text-start rounded-md font-bold hover:text-blue-700"
             >
-              <p>Contact</p>
+              <p>CONTACT</p>
             </Link>
           </ul>
         </div>

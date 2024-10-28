@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import mlogo from "../../Asset/mlogo.png";
+import mlogo from "../../Asset/flair logo.png";
 import NarBar from "../../Componet/NavBar/NavBar";
 
 const SignUp = () => {
@@ -61,7 +61,7 @@ const SignUp = () => {
     <div>
       <NarBar />
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div className="h-24 w-52 sm:mx-auto sm:w-full sm:max-w-sm">
+        <div className="h-24 w-52 mx-auto sm:w-full sm:max-w-sm">
           <img
             alt="Your Company"
             src={mlogo}
