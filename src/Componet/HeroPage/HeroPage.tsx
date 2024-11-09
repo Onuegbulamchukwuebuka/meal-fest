@@ -12,7 +12,7 @@ const HeroPage = () => {
         <div className="font-serif text-2xl md:text-4xl font-bold mx-auto text-center w-3/4 sm:w-1/2 md:w-[70%]">
           Your Favorite Finds, Just a Click Away
         </div>
-        <div className="font-serif mx-auto mt-4 text-xs md:text-lg md:p-1 md:mt-8 text-slate-50 bg-blue-700 h-11 w-3/4 sm:w-1/2 text-center rounded-md font-medium">
+        <div className="font-serif mx-auto py-2 mt-4 text-xs md:text-lg md:p-1 md:mt-8 text-slate-50 bg-blue-700 h-11 w-3/4 sm:w-1/2 text-center rounded-md font-medium">
           Your One-Stop Shop for Everything
         </div>
         <Link className="mx-auto" to="/Order">
