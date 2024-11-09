@@ -8,7 +8,7 @@ const HeroPage = () => {
       className="bg-cover bg-no-repeat bg-center bg-fixed h-[100vh] w-full flex flex-col justify-center item-center"
       style={{ backgroundImage: `url(${Heroimage})` }}
     >
-      <div className="shadow-red-500 shadow-2xl flex flex-col item-center justify-center h-[60%] w-3/4 md:w-1/2 bg-slate-50 mx-auto rounded-3xl border-solid border-black border-4 opacity-80">
+      <div className="shadow-red-500 shadow-2xl flex flex-col item-center justify-center h-[60%] w-[90%] md:w-1/2 bg-slate-50 mx-auto rounded-3xl border-solid border-black border-4 opacity-80">
         <div className="font-serif text-2xl md:text-4xl font-bold mx-auto text-center w-3/4 sm:w-1/2 md:w-[70%]">
           Your Favorite Finds, Just a Click Away
         </div>
