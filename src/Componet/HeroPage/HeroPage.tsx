@@ -9,10 +9,10 @@ const HeroPage = () => {
       style={{ backgroundImage: `url(${Heroimage})` }}
     >
       <div className="shadow-red-500 shadow-2xl flex flex-col item-center justify-center h-[60%] w-[90%] md:w-1/2 bg-slate-50 mx-auto rounded-3xl border-solid border-black border-4 opacity-80">
-        <div className="font-serif text-2xl md:text-4xl font-bold mx-auto text-center w-3/4 sm:w-1/2 md:w-[70%]">
+        <div className="font-serif text-2xl md:text-4xl font-bold mx-auto text-center w-[70%] sm:w-1/2 md:w-[70%]">
           Your Favorite Finds, Just a Click Away
         </div>
-        <div className="font-serif mx-auto py-2 mt-4 text-xs md:text-lg md:p-1 md:mt-8 text-slate-50 bg-blue-700 h-11 w-3/4 sm:w-1/2 text-center rounded-md font-medium">
+        <div className="font-serif mx-auto py-3 mt-4 text-xs md:text-lg md:p-1 md:mt-8 text-slate-50 bg-blue-700 h-11 w-3/4 sm:w-1/2 text-center rounded-md font-medium">
           Your One-Stop Shop for Everything
         </div>
         <Link className="mx-auto" to="/Order">
